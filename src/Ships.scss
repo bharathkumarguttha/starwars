@@ -1,0 +1,33 @@
+.ship-container {
+    .ship-details {
+        border: 1px solid rebeccapurple;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+        text-align: left;
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        .ship-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .ship-info-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+
+        .ship-model-wrapper p:first-child,
+        .ship-film-wrapper p:first-child {
+            font-weight: bold;
+        }
+    }
+
+
+}

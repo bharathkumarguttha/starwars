@@ -1,0 +1,71 @@
+$color: rebeccapurple;
+$color-white: white;
+
+body {
+    color: $color;
+}
+
+.container {
+    max-width: 720px;
+
+    @media (max-width:540px) {
+        max-width: 320px;
+    }
+
+    @media (min-width:541px) and (max-width:768px) {
+        max-width: 480px;
+    }
+
+    text-align: center;
+    margin: auto;
+
+    .header {
+        font-size: 1.75rem;
+
+        .header--title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .sub-header {
+        font-size: 1.45rem;
+    }
+
+    .starship--meta-info {
+        p {
+            margin: 0.5rem 0;
+        }
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+
+    .cta--get-starships {
+        border: none;
+        background: $color;
+        color: $color-white;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        &:hover {
+            background: $color-white;
+            border: 1px solid $color;
+            color: $color;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+
+            &:hover {
+                background: $color;
+                border: none;
+                color: $color-white;
+            }
+        }
+    }
+
+    svg {
+        margin-left: 0.5rem;
+    }
+}
